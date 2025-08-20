@@ -3,5 +3,5 @@ import {IHelloWorldWebPartProps} from "../../HelloWorldWebPart";
 
 
 export const HelloWorld: React.FC<IHelloWorldWebPartProps> = (props) => {
-    return (<div>Hello from SPFx with React 17 !!!! Oh</div>)
+    return (<div>Hello from SPFx with React 17 !!!!</div>)
 }
