@@ -23,7 +23,7 @@ This command you need to run always after package installation for changing vers
 
 To rename your project run
 ```bash
-npm run-script config <Your_Name>
+npm run-script config <YourName>
 ```
 
 This package produces the following:

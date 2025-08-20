@@ -5,14 +5,13 @@ import * as ReactDom from 'react-dom';
 import {
   BaseClientSideWebPart,
   IPropertyPaneConfiguration,
-  PropertyPaneTextField
 } from '@microsoft/sp-webpart-base';
 
 import * as strings from 'HelloWorldWebPartStrings';
 
-import HelloWorldContainer, { IHelloWorldContainerProps } from './container/HelloWorldContainer';
 import { configContainer } from '../../common';
 import { loadTheme } from "@fluentui/react";
+import {HelloWorld} from "./components";
 
 export interface IHelloWorldWebPartProps {
   
@@ -27,8 +26,8 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
   
   public render(): void {
     configContainer();
-    const element: React.ReactElement<IHelloWorldContainerProps> = 
-      React.createElement(HelloWorldContainer, {...this.properties});
+    const element: React.ReactElement<IHelloWorldWebPartProps> =
+      React.createElement(HelloWorld, {...this.properties});
 
     ReactDom.render(element, this.domElement);
   }

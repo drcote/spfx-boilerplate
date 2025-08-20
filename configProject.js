@@ -2,7 +2,7 @@ const fs = require('fs');
 const projectName = process.argv[2];
 const rootDir = 'src/webparts/HelloWorld'
 
-const remaneInsideFiles = [
+const renameInsideFiles = [
   'config/config.json',
   `${rootDir}/components/HelloWorld/HelloWorld.tsx`,
   `${rootDir}/container/HelloWorldContainer.tsx`,
@@ -28,7 +28,7 @@ const renameNames = [
 ]
 
 const renameInsideFileSync = () => {
-  for (const filePath of remaneInsideFiles) {
+  for (const filePath of renameInsideFiles) {
      let file = fs.readFileSync(filePath, 'utf8');
      for (const rename of renameNames) {
       file = file.replace(rename[0], rename[1]);

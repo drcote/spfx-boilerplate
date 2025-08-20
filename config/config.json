@@ -18,6 +18,7 @@
     }
   },
   "localizedResources": {
-    "HelloWorldWebPartStrings": "lib/webparts/HelloWorld/loc/{locale}.js"
+    "HelloWorldWebPartStrings": "lib/webparts/HelloWorld/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
   }
 }

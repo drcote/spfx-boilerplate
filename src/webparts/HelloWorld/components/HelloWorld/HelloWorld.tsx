@@ -1,7 +1,7 @@
-import React, { DetailedHTMLProps, HTMLAttributes } from 'react';
+import * as React from 'react';
+import {IHelloWorldWebPartProps} from "../../HelloWorldWebPart";
 
-export type HelloWorldHTMLProps = DetailedHTMLProps & HTMLAttributes
 
-export const HelloWorld: React.FC<HelloWorldHTMLProps> = (props) => {
-    return(<div>Hello from SPFx with React 17 !!!!</div>)
+export const HelloWorld: React.FC<IHelloWorldWebPartProps> = (props) => {
+    return (<div>Hello from SPFx with React 17 !!!! Oh</div>)
 }
